@@ -1,0 +1,147 @@
+@charset "utf-8";
+/*=====================
+Html(Base Font Size)======*/ 
+
+html{/*フォントサイズを10pxにする*/
+	font-size: 62.5%;
+}
+
+a{
+	color: #00a85c;
+	text-decoration: none;
+}
+
+a:visited{/*訪問済みリンク*/
+	color: #233621;
+}
+
+a:hover{
+	color:#ab0012;
+}
+
+/*=============================================
+スマホ、共通用
+===========================================*/
+@media screen and (min-width:480px) {
+	/*#nav-open {
+	display:none;
+}*/
+
+body{
+	font-size: 1.8rem;
+	color: #222;/*文字色#000（黒）はユーザーにとって目に良くないので回避すること*/
+	line-height: 1.5; /*文字間隔を見やすくするため*/
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+}
+img{
+	max-width: 100%;
+	
+}
+/*header{
+	padding:10px;
+	/*background: #989fa0;
+}*/
+
+li{
+list-style-type: none;
+	font-color: #898a8b;
+}
+
+li navi-g{
+	color: #5e5c60;
+	border-top: solid #1e366a 1px;/*上のボーダー*/
+	border-bottom: solid #656369 1px;/*下のボーダー*/
+	padding: 0.5em 0 0.5em 1.5em;
+}
+li navi-g li{
+	line-height: 1.5;
+	padding: 0.5rem 0;
+}
+
+
+.logo-area{
+	text-align: center;
+	margin: auto;}
+
+main,
+footer{
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1{
+	text-align: center;
+}
+span{
+	font-family: san-serif;/*ゴシック体*/
+	font-size: 2.3rem;
+	color: #a6a6a6; 
+}
+access{
+	background-color: #e4e4e2;
+	text-align: center;
+	color: #5e5c60;
+	/*font-size: 1.0rem;*/
+}
+
+.iframe-map{
+	position: relative;
+	width: 100%;
+	padding-top: 65%;/* = height ÷ width × 100 */
+}
+
+.iframe-map iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+footer{
+	background-color: #dad8de;
+	text-align: center;
+}
+
+/*======================================
+Tablet and Pc(タブレット以上)
+=======================================*/ 
+
+@media screen and (min-width:768px){
+header-logo-menu{
+	display: flex;
+	flex-wrap: wrap;			
+}
+
+nav{
+	width: 50%;
+}
+header{
+max-width: 100%;
+
+}
+
+article{
+
+}
+navi-g ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+metro,namba ul{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+/*metro,namba ul li{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}*/
+
+}
